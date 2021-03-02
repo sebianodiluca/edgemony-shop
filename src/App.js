@@ -1,8 +1,8 @@
 import "./App.css";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import CardList from "./components/CardList";
+import Hero from "./components/Hero/Hero";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import CardList from "./components/CardList/CardList";
 
 const fakeProducts = require("./mocks/data/products.json");
 
@@ -19,10 +19,9 @@ const data = {
 function App() {
   return <div className="App">
     <Header  logo={data.logo} name={data.description} />
-      {/* <Hero
-      />
-      <CardList />
-      <Footer  /> */}
+    <Hero /> 
+    <CardList />
+    <Footer  /> 
   </div>;
 }
 
